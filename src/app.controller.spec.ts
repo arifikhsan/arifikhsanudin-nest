@@ -20,7 +20,7 @@ describe('AppController', () => {
       const me = new Person();
       me.name = 'Arif Ikhsanudin';
 
-      expect(appController.getMe()).toEqual(me);
+      expect(appController.getMe()).toStrictEqual(me);
     });
   });
 });
