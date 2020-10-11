@@ -16,10 +16,11 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
+    it('should return my info', () => {
       const me = new Person();
       me.name = 'Arif Ikhsanudin';
-      expect(appController.getMe()).toBe(me);
+
+      expect(appController.getMe()).toEqual(me);
     });
   });
 });
